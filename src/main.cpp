@@ -1,7 +1,6 @@
 // Copyright 2021 Stolbov Yaroslav
 #include <iostream>
 #include <string>
-#include <stack>
 #include "postfix.h"
 
 int main() {

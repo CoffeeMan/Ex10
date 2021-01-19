@@ -1,5 +1,4 @@
 // Copyright 2021 Stolbov Yaroslav
-#include "MyStack.h"
 #include <stack>
 #include "postfix.h"
 #include <string>
@@ -13,14 +12,12 @@ std::string infix2postfix(std::string infix) {
             current += infix[i];
         if (priority == 1)
             st.push(infix[i]);
-        if (priority > 1){
-            //current += ' ';
+        if (priority > 1) {
             while (!st.empty()) {
                 if (getP(st.top()) >= priority) {
                     current = current + st.top();
                     st.pop();
-                }
-                else {
+                } else {
                     break;
                 }
             }
@@ -42,7 +39,8 @@ std::string infix2postfix(std::string infix) {
         current += ' ';
     }
     for (int i = 0; i < current.length(); i++)
-        if (current[i] == ' ' && current[i + 1] == ' ') {current.erase(i, 1); i = (i - 1);}
+        if (current[i] == ' ' && current[i + 1] == ' ')
+        {current.erase(i, 1); i = (i - 1);}
     return current;
 }
 

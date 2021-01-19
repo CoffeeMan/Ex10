@@ -1,4 +1,4 @@
-// Copyright 2020 A.SHT
+// Copyright 2021 Stolbov Yaroslav
 #ifndef INCLUDE_MYSTACK_H_
 #define INCLUDE_MYSTACK_H_
 
