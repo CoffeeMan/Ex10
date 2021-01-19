@@ -40,8 +40,9 @@ std::string infix2postfix(std::string infix) {
     for (int i = 0; i < current.length(); i++)
         if (current[i] == ' ' && current[i + 1] == ' ')
         {current.erase(i, 1); i = (i - 1);}
-    if (current[current.length()] == ' ')
-        current = current.substr(0, current.size() - 1);
+    if (current[current.length() - 1] == ' ')
+        current.erase(current.size() - 1);
+        /*current = current.substr(0, current.size() - 1);*/
     return current;
 }
 
