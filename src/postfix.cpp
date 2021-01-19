@@ -43,7 +43,7 @@ std::string infix2postfix(std::string infix) {
     }
     for (int i = 0; i < current.length(); i++)
         if (current[i] == ' ' && current[i + 1] == ' ') {current.erase(i, 1); i = (i - 1);}
-  return current;
+    return current;
 }
 
 int getP(char token) {
