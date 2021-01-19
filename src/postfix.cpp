@@ -1,7 +1,6 @@
 // Copyright 2021 Stolbov Yaroslav
 #include <stack>
 #include "postfix.h"
-#include <string>
 std::string infix2postfix(std::string infix) {
     std::string current;
     std::stack <char> st;
